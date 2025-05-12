@@ -11,7 +11,7 @@ import matplotlib.dates as mdates
 from datetime import datetime, timedelta
 
 #Se importa el documento a graficar
-data = pd.read_csv("20230920.txt",sep= ",", engine='python',skiprows=4, names=["time","N","laser","retro"])
+data = pd.read_csv("20231018.txt",sep= ",", engine='python',skiprows=4, names=["time","N","laser","retro"])
 
 #Se toma el tiempo y se le da el formato de año,mes,día, hora,minutos y segundos
 hora = data['time']
@@ -77,4 +77,4 @@ plt.ylabel('Altura (m)')
 fig.show()
 
 #Se guarda la figura
-plt.savefig('20230915.png')
+plt.savefig('20231018.txt.png')
